@@ -1,0 +1,20 @@
+-- Table: public.articles
+
+-- DROP TABLE public.articles;
+
+CREATE TABLE public.articles
+(
+    title character varying(256) COLLATE "default".pg_catalog,
+    keywords character varying(256) COLLATE "default".pg_catalog,
+    content text COLLATE "default".pg_catalog,
+    url character varying(128) COLLATE "default".pg_catalog,
+    id character varying(256) COLLATE "default".pg_catalog NOT NULL,
+    student_id character varying(256) COLLATE "default".pg_catalog
+)
+WITH (
+    OIDS = FALSE
+)
+TABLESPACE pg_default;
+
+ALTER TABLE public.articles
+    OWNER to postgres;

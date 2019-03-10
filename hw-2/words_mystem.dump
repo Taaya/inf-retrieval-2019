@@ -1,0 +1,17 @@
+-- Table: public.words_mystem
+
+-- DROP TABLE public.words_mystem;
+
+CREATE TABLE public.words_mystem
+(
+    id character varying(64) COLLATE "default".pg_catalog,
+    articles_id character varying(64) COLLATE "default".pg_catalog,
+    term character varying(256) COLLATE "default".pg_catalog
+)
+WITH (
+    OIDS = FALSE
+)
+TABLESPACE pg_default;
+
+ALTER TABLE public.words_mystem
+    OWNER to postgres;

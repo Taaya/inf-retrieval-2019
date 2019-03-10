@@ -1,0 +1,17 @@
+-- Table: public.words_porter
+
+-- DROP TABLE public.words_porter;
+
+CREATE TABLE public.words_porter
+(
+    id character varying(64) COLLATE "default".pg_catalog,
+    articles_id character varying(64) COLLATE "default".pg_catalog,
+    term character varying(256) COLLATE "default".pg_catalog
+)
+WITH (
+    OIDS = FALSE
+)
+TABLESPACE pg_default;
+
+ALTER TABLE public.words_porter
+    OWNER to postgres;
